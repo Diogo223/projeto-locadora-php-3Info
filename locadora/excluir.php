@@ -11,6 +11,7 @@ include_once('conection.php');
 
 	if($r){
 		echo "Deletado";
+		header('location:Listar.php');
 	}else{
 		echo "Ocorreu um Erro";
 		echo "Error: " . $sql . "<br>" . mysqli_error($con);
