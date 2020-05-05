@@ -16,5 +16,4 @@ include_once('conection.php');
 		echo "Error: " . $sql . "<br>" . mysqli_error($con);
 	}
 	
-redirect:/listar.php;
 ?>
