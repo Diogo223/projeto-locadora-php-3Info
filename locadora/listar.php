@@ -88,7 +88,7 @@ input{
 	</div>
 	<div id="men">
 		<a href="index.html">Home</a>
-		<a href="cadastro.php">Cadastro</a>
+		<a href="cadastro.html">Cadastro</a>
 		<a href="sobre.html">Sobre</a>
 	</div>
 	<div id="b"><br>
