@@ -1,20 +1,19 @@
 <?php 	
 	
-	$id = $_GET["id"];
+	include_once('conection.php');
 	
-include_once('conection.php');
-
-
+	$id = $_GET['id'];
+	
 	$sql = "DELETE FROM locadora WHERE id = '$id'";
-	
+
 	$r = mysqli_query($con, $sql);
 
-	if($r){
-		echo "Deletado";
-		header('location:listar.php');
+	if ($r) {
+		echo  "<script>alert('Produto ecxcluído com sucesso!');</script>" ;
 	}else{
-		echo "Ocorreu um Erro";
-		echo "Error: " . $sql . "<br>" . mysqli_error($con);
+		echo  "<script>alert(Erro ao excluir.');</script>" . $sql . "<br>" . mysqli_error($con);
 	}
 	
+	
+
 ?>

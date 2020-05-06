@@ -1,8 +1,6 @@
 <?php 
 	include_once('conection.php');
-	include_once('index.html');
 	
-	$id = $_POST['id'];
 	$eq = $_POST['equip'];
 	$qu = $_POST['quan'];
 	$es = $_POST['esp'];
@@ -14,11 +12,10 @@
 
 	
 	if ($r) {
-		echo "Produto cadastrado com sucesso!" ;
+		echo  "<script>alert('Produto cadastrado com sucesso!');</script>" ;
 	}else{
-		echo "Error: " . $sql . "<br>" . mysqli_error($con);
+		echo "<script>alert(' Erro ao cadastrar'.);</script>" . $sql . "<br>" . mysqli_error($con);
 	}
-	
 	mysqli_close($con);
 	
 ?>

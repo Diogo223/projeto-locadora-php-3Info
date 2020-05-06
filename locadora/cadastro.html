@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <head>
 <link rel="sortcut icon" href="not.png" type="image/gif"/>
 	<meta charset="utf-8">
@@ -7,18 +9,18 @@
 </head>
 <style type="text/css">
     table{
-        position: fixed;
         background-color: #50DBD0 ;
         color: black;	
+        width: 45%;
+        height: 390px;
         margin-left: 25%;
-        width: 700px;
-        height: 50%;
-        border-radius: 61px;
+        margin-right: 25%;
+        border-radius: 40px;
     }
     form{
-    position: relative;
-     
-      width: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 10%;
     }
     input{
         border-radius: 8px;
@@ -36,8 +38,8 @@
         background-color: #8190A5;
         color: white;
     }
-    #a{
-                
+            #a{
+                margin-top: 1%;
                 background-color: #13B1CE;
                 text-decoration: none;
                 text-align: center;
@@ -72,27 +74,20 @@
                 font-family: sans-serif;
             }
             a{
-                text-decoration: none;
-                font-size: 25px;
-                margin-left: 5%;
-               color: black;
-              
-            }
-            a:hover{
-                color: red;
-            }
+			text-decoration: none;
+			font-size: 25px;
+			margin-left: 5%;
+           color: black;
+        }
+		a:hover{
+			text-decoration: none;
+			color: white;
+		}
             #rodape{
                 width: 100%;
                 height: 100%;
             }
-            #princ{
-                position: relative;
-                font-family: sans-serif;	
-                font-weight: bold;	
-                height: 20%;
-                font-size: 20px;
-                color: #47525E;
-            }
+          
             #tit{
                 margin-top: 2%;
             }
@@ -103,40 +98,80 @@
                 font-size: 20px;
                 height: 15%;
                 border-radius: 5px;
+                
             }
             #butao:hover{
                 background-color: indianred;
                 color: white;
             }
+            #caixE{
+                width: 60%;
+                height: 7%;
+                font-size: 15px;
+                margin-top: -4%;
+            }
             #caixQ{
-                width: 200px;
-                height: 20px;
+                width: 10%;
+                height: 10%;
+                font-size: 15px;
+                text-align: center;
             }
             #caixEs{
-                width: 300px;
-                height: 100px;
+                width: 60%;
+                height: 60px;
+                font-size: 15px;
+               
             }
             #caixP{
-                width: 200px;
-                height: 20px;
+                width: 15%;
+                height: 7%;
+                font-size: 15px;
+                margin-top: -4%;
             }
-            #caixE{
-                width: 200px;
-                height: 20px;
+            
+            #princ{
+                
+                font-family: sans-serif;	
+                font-weight: bold;	
+                font-size: 20px;
+                color: #47525E;
+                width: 80%;
+                margin-left: 20%;
+              
             }
+            #bt{
+            margin-top: 0.2%;
+			text-decoration: none;
+			font-size: 25px;
+			margin-left: 3%;
+           	color: rgb(33, 38, 39);
+		
+		}
+		#bt:hover{
+			background-color: rgb(59, 67, 68);
+			text-decoration: none;
+			font-size: 25px;
+			margin-left: 3%;
+           	color: white;
+		
+		}
+        #dent{
+            margin-top: -10%;
+        }
+       
         </style>
 
 <body>
 	
-	
+	<div class="container-fluid">
 <div id="a">
     <h1>Locação de equipamentos Informática</h1>
 		<img src="not.png" id="logo"><br>
     </div>
     <div id="men">
-        <a href="index.html">Home</a>
-        <a href="listar.php">Produtos</a>
-        <a href="sobre.html">Sobre</a>
+        <button id="bt" type="button" class="btn btn-light btn-sm btn-lg active"><a href="index.html">Home</a></button>
+        <button id="bt" type="button" class="btn btn-light btn-sm"><a href="listar.php">Produtos</a></button>
+        <button id="bt" type="button" class="btn btn-light btn-sm"><a href="sobre.html">Sobre</a></button>
     </div>
 
 <div id="b">
@@ -149,13 +184,15 @@
 	<form action="salvar.php" method="POST">
 		<tr>
 			<td id="princ">
+                <div id="dent">
            <input type="hidden" value="id" name="id" size="1"><br>
-		Equipamento:*<input  id="caixE"  type="text"  name="equip" id="equip"  size="20" placeholder="Qual é o equipamento..."><br><br>
-		Quantidade:*<input  id="caixQ" type="text"  name="quan" id="quan"  size="20" placeholder="Qual é a quntidade..."><br><br>
+		Equipamento:*<input id="caixE"  type="text"  name="equip" id="equip"  size="20" placeholder="Qual é o equipamento..."><br><br>
+		Quantidade:*<input id="caixQ" type="text"  name="quan" id="quan"  size="20" placeholder="Quant..."><br><br>
         Especificaçãoes:*<input   id="caixEs" type="text"  id="esp" name="esp"  size="20" placeholder="Descreva o equipamento..."><br><br>
-        Preço R$:*<input  id="caixP" type="text" name="pre" id="20" name="pre" placeholder="Qual é o preço equipamento..."><br><br>
-            
+        Preço R$:*<input  id="caixP" type="text" name="pre" id="20" name="pre" placeholder="Preço..."><br><br>
+    </div>   
         <input id="butao" type="submit" name="salva" value="Cadastrar">
+    
 			</td>
             </tr>
 			
@@ -167,5 +204,7 @@
 <div id="c">
     <img src="rof.png" id="rodape">
 </div>
+</div>
+
 </body>
 </html>
