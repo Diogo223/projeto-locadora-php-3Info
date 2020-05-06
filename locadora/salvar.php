@@ -13,6 +13,7 @@
 	
 	if ($r) {
 		echo  "<script>alert('Produto cadastrado com sucesso!');</script>" ;
+		header('location: index.html');
 	}else{
 		echo "<script>alert(' Erro ao cadastrar'.);</script>" . $sql . "<br>" . mysqli_error($con);
 	}
