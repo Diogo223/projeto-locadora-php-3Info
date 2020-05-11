@@ -186,7 +186,7 @@
     </div>
     <?php
     
-    $id = $_GET['id'];
+    $id = isset($_GET['id']) ? $_GET['id'] : false;
     $eq = $_GET['eq'];
     $qu = $_GET['qu'];
     $es = $_GET['esp'];
@@ -200,13 +200,13 @@
        <tr>
            <td id="princ">
                <div id="dent">
-        <input type="hidden" id="id" value="echo<?php echo $id;?>">
+        <input type="hidden" id="id" name="id" value="<?php echo $id;?>">
        Equipamento:*<input id="caixE"  type="text"  id="equip" name="equip" value="<?php echo $eq;?>" ><br><br>
        Quantidade:*<input id="caixQ" type="text"  id="quan" name="quan" value="<?php echo $qu;?>" ><br><br>
        Especificaçãoes:*<input id="caixEs" type="text"  id="esp" name="esp" value="<?php echo $es;?>" ><br><br>
        Preço R$:*<input id="caixP" type="text"  id="pre" name="pre"  value="<?php echo $pr;?>" ><br><br>
        </div>
-       <input id="butao" type="submit" name="salva" value="Editar">
+       <input id="butao" type="submit" name="edita" value="Editar">
            </td>
            </tr>
            

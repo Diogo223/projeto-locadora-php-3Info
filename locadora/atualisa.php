@@ -1,23 +1,23 @@
 <?php
 include_once('conection.php');
 
-$id = $_GET['id'];
-$eq = $_GET['eq'];
-$qu = $_GET['qu'];
-$es = $_GET['esp'];
-$pr = $_GET['pr'];
+    $id = isset($_POST['id']) ? $_POST['id'] : false;
+    $eq = $_POST['equip'];
+    $qu = $_POST['quan'];
+    $es = $_POST['esp'];
+    $pr = $_POST['pre'];
 
-$sql = "UPDATE locadora SET equip = '$eq', quant = '$qu', espec = '$es', preco = '$pr'  WHERE id = '$id' ";
+$sql = "UPDATE locadora SET equip='$eq', quant='$qu', espec='$es', preco='$pr' WHERE id='$id' ";
 
 $r = mysqli_query($con, $sql);
 
 if ($r) {
-    echo "<script> alert('Edição concluída com sucesso!'.);</script>" ;
-   
+  echo "Editado com sucesso!  ";
   header('location: listar.php');
-
+ 
 }else{
-    echo "<script>alert('Erro ao editar'.);</script>" . $sql . "<br>" . mysqli_error($con);
+    echo "Erro ao editar'" . $sql . "<br>" . mysqli_error($con);
+    header('location: listar.php');
 }
 
 ?>
