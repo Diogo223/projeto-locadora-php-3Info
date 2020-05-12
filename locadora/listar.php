@@ -119,7 +119,7 @@ input{
 		
 	</div>
 	<div id="men">
-			<a href="listar.php" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Home</a>
+			<a href="index.html" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Home</a>
 			<a href="cadastro.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Cadastro</a>
 			<a href="sobre.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Sobre</a>
 	</div>
