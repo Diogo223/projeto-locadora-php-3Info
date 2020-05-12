@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <head>
 <link rel="sortcut icon" href="not.png" type="image/gif"/>
 	<meta charset="utf-8">
@@ -51,9 +52,7 @@
                 margin-top: -5%;
                 margin-left: -85%;
             }
-            #men{
-                height: 25px;
-            }
+           
             #b{
                 
                 background-color: #13B1CE;
@@ -166,9 +165,23 @@
         #dent{
             margin-top: -10%;
         }
+        #pr{
+			background-image: url("fundo.png");
+		}
+		#men{
+			height: 55px;
+			background-color: aliceblue;
+		}
         </style>
 
 <body>
+<div class="container-fluid" id="pr">
+<div class="alert alert-success" role="alert">
+			<strong>Olá!</strong> Essa é a página de edição dos dados cadastrados.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+              </button>
+</div>
 <div id="a">
     <h1>Locação de equipamentos Informática</h1>
 		<img src="not.png" id="logo"><br>
@@ -219,6 +232,7 @@
    </div>
 <div id="c">
     <img src="rof.png" id="rodape">
+</div>
 </div>
 </body>
 </html>

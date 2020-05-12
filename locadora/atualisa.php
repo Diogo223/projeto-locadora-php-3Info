@@ -12,12 +12,12 @@ $sql = "UPDATE locadora SET equip='$eq', quant='$qu', espec='$es', preco='$pr' W
 $r = mysqli_query($con, $sql);
 
 if ($r) {
-  echo "Editado com sucesso!  ";
   header('location: listar.php');
+  echo "<script>echo('Editado com sucesso!')</script> ";
  
-}else{
-    echo "Erro ao editar'" . $sql . "<br>" . mysqli_error($con);
+}else{ 
     header('location: listar.php');
+    echo "<script>echo('Erro ao editar')</script> " . $sql . "<br>" . mysqli_error($con);
 }
 
 ?>

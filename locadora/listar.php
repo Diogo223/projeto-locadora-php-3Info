@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <head>
 <link rel="sortcut icon" href="not.png" type="image/gif"/>
 	<meta charset="utf-8">
@@ -35,9 +36,7 @@ input{
 			margin-top: -5%;
 			margin-left: -85%;
 		}
-        #men{
-			height: 50px;
-		}
+        
 		#b{
             
 			background-color: #13B1CE;
@@ -61,7 +60,7 @@ input{
 			text-decoration: none;
 			font-size: 25px;
 			margin-left: 5%;
-           color: black;
+            color: black;
         }
 		a:hover{
 			text-decoration: none;
@@ -81,7 +80,7 @@ input{
 			margin-top: 2%;
 		}
 		#bt{
-            margin-top: 0.1%;
+           
 			text-decoration: none;
 			font-size: 25px;
 			margin-left: 3%;
@@ -96,20 +95,33 @@ input{
            	color: white;
 		
 		}
+		#pr{
+			background-image: url("fundo.png");
+		}
+		#men{
+			height: 55px;
+			background-color: aliceblue;
+		}
 		
 </style>
 <body>
-<div class="container-fluid">
+<div class="container-fluid" id="pr">
 	<?php include_once('listar.php');?>
+	<div class="alert alert-success" role="alert">
+			<strong>Olá!</strong> Essa é a página de listagem de dados.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+	</div>
 	<div id="a">
 		<h1>Locação de equipamentos Informática</h1>
 		<img src="not.png" id="logo"><br>
 		
 	</div>
 	<div id="men">
-	<button id="bt" type="button" class="btn btn-light btn-sm btn-lg active" ><a href="index.html">Home</a></button>
-	<button id="bt" type="button" class="btn btn-light btn-sm"><a href="cadastro.html">Cadastro</a></button>
-	<button id="bt" type="button" class="btn btn-light btn-sm"><a href="sobre.html">Sobre</a></button>
+			<a href="listar.php" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Home</a>
+			<a href="cadastro.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Cadastro</a>
+			<a href="sobre.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Sobre</a>
 	</div>
 	<div id="b"><br>
 		<div id="tit">
@@ -156,6 +168,7 @@ input{
 	<div id="c">
 		<img src="rof.png" id="rodape">
 	</div>
+	
 	</div>
 </body>
 </html>
