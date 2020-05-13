@@ -176,15 +176,7 @@
 			max-width: 100%;
 			max-height: 100%;
 		}
-		@media only screen and (max-device-width: 900px) {
-		/* .menu { width:600px; } */
-		}
-		@media only screen and (max-device-width: 700px) {
-		/* .menu { width:400px; } */
-		}
-		@media only screen and (max-device-width: 900px) {
-		/* .menu { width:100%; } */
-		}
+		
         </style>
 
 <body>
