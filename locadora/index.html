@@ -12,37 +12,43 @@
       
 		#a{
             margin-top: 1%;
-			background-color: #13B1CE;
+			background-color:rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
 			height: 100px;
             
 		}
 		#logo{
-			width: 15% ;
-			height: auto;
-			margin-top: -5%;
-			margin-left: -85%;
+			width: 50% ;
+			height: 80%;
+			margin-top: 5%;
+			margin-left: -40%;
+			margin-right: -5%;
 		}
 		
        
 		#b{
-           
-			background-color: #13B1CE;
+            
+			background-color: rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
-			height: 440px;
+			height: 500px;
 			
 		}
 		#c{
-			background-color: #13B1CE;
+			background-color: rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
 			height:170px;
 		}
-		h1{
-			color: white;
-			
+		#h1{
+			position: absolute;
+			color: rgba(255, 255, 255, 0.918);
+			font-family: Maiandra GD;
+			font-size: 35px;
+			margin-top: 10%;
+		    margin-left: 25%;
+			margin-right: 25%;
 		}
 		a{
 			
@@ -60,37 +66,47 @@
 			height: 100%;
 		}
 		#bt{
-			
 			text-decoration: none;
-			font-size: 25px;
+			font-size: 20px;
 			margin-left: 3%;
-           	color: rgb(33, 38, 39);
-		
+			background-color: rgba(60, 209, 235, 0.158);
 		}
 		#bt:hover{
-			background-color: rgb(59, 67, 68);
+			background-color: rgba(38, 134, 151, 0.877);
 			text-decoration: none;
-			font-size: 25px;
+			font-size: 20px;
 			margin-left: 3%;
-           	color: white;
+           color: white;
 		
 		}
-		#pr{
-			background-image: url("fundo.png");
-		}
+		
 		#men{
-			height: 55px;
-			background-color: aliceblue;
+			position: absolute;
+			margin-left: 40%;
+			margin-top: 3%;
+			width: 55%;
+			height: 7%;
+			font-family: Maiandra GD;
 		}
 		body{
 			max-width: 100%;
 			max-height: 100%;
 		}
-		
+		#pr{
+			height: 100%;
+			width: 100%;
+		}
+		#dLog{
+			position: absolute;
+			margin-top: -0.3%;
+			margin-right: -5%;
+			width: 30%;
+			
+		}
 		
 	</style>
 
-<body>
+<body background="fundo.png">
 	<div class="container-fluid" id="pr">
 		
 		<div class="alert alert-success alert-dismissible">
@@ -100,19 +116,22 @@
 		  </div>
 	
 	<div id="a">
-		<h1>Locação de equipamentos Informática</h1>
-		<img src="not.png" id="logo" class="img-fluid" alt="Responsive image"><br>
-		
+		<div id="dLog">
+		<img src="not.png" id="logo" class="img-fluid" alt="Responsive image">
+		</div>
+		<div id="men">
+				<a href="#" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Home</a>
+				<a href="listar.php" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Produtos</a>
+				<a href="cadastro.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Cadastro</a>
+				<a href="sobre.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Sobre</a>
+		</div>
 	</div>
-	<div id="men">
-			<button id="bt" type="button" class="btn btn-light btn-sm btn-lg active" ><a href="#">Home</a></button>
-			<a href="listar.php" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Produtos</a>
-			<a href="cadastro.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Cadastro</a>
-			<a href="sobre.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Sobre</a>
-        </div>
+	
 	
 	<div id="b">
-
+		<div id="h1">
+		<h1>Locação de equipamentos Informática</h1>
+		</div>
 		<?php 
 				include_once('salvar.php');
 		?>

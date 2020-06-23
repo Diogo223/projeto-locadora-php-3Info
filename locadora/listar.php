@@ -10,57 +10,64 @@
 </head>
 <style type="text/css">
 
-table{
-	background-color: white ;
-	color: black;	
-	margin-left: 25%;
-	margin-right: 25%;
-	width: 50%;
-	margin-top: 1%;
-}
+		table{
+		background-color: white ;
+		color: black;	
+		margin-left: 25%;
+		margin-right: 25%;
+		width: 50%;
+		margin-top: 10%;
+		}
 
-input{
-	border-radius: 25px;
-	
-}
-#a{
-            
-			background-color: #13B1CE;
+		input{
+		border-radius: 25px;
+		}
+		#a{
+            margin-top: 1%;
+			background-color:rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
 			height: 100px;
             
 		}
 		#logo{
-			width: 15% ;
-			margin-top: -5%;
-			margin-left: -85%;
+			width: 50% ;
+			height: 80%;
+			margin-top: 5%;
+			margin-left: -40%;
+			margin-right: -5%;
 		}
-        
+		
+       
 		#b{
             
-			background-color: #13B1CE;
+			background-color: rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
-			height: 30%;
+			height: 500px;
 			
 		}
 		#c{
-			background-color:#13B1CE;
+			background-color: rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
 			height:170px;
 		}
-		h1{
-			margin-top: 1%;
-			color: white;
-			font-family: sans-serif;
+		#h1{
+			position: absolute;
+			color: rgba(255, 255, 255, 0.918);
+			font-family: Maiandra GD;
+			font-size: 35px;
+			margin-top: 4%;
+		    margin-left:37%;
+			margin-right: 25%;
 		}
 		a{
+			
 			text-decoration: none;
 			font-size: 25px;
 			margin-left: 5%;
-            color: black;
+           	color: black;
         }
 		a:hover{
 			text-decoration: none;
@@ -69,6 +76,25 @@ input{
 		#rodape{
 			width: 100%;
 			height: 100%;
+		}
+		
+		
+		#men{
+			position: absolute;
+			margin-left: 40%;
+			margin-top: 3%;
+			width: 55%;
+			height: 7%;
+			
+			font-family: Maiandra GD;
+		}
+		body{
+			max-width: 100%;
+			max-height: 100%;
+		}
+		#pr{
+			height: 100%;
+			width: 100%;
 		}
 		#princ{
 			background-color: #C0CCDA;
@@ -80,35 +106,29 @@ input{
 			margin-top: 2%;
 		}
 		#bt{
-           
 			text-decoration: none;
-			font-size: 25px;
+			font-size: 20px;
 			margin-left: 3%;
-           	color: rgb(33, 38, 39);
-		
+			background-color: rgba(60, 209, 235, 0.158);
 		}
 		#bt:hover{
-			background-color: rgb(59, 67, 68);
+			background-color: rgba(38, 134, 151, 0.877);
 			text-decoration: none;
-			font-size: 25px;
+			font-size: 20px;
 			margin-left: 3%;
-           	color: white;
+           color: white;
 		
 		}
-		#pr{
-			background-image: url("fundo.png");
-		}
-		#men{
-			height: 55px;
-			background-color: aliceblue;
-		}
-		body{
-			max-width: 100%;
-			max-height: 100%;
+		#dLog{
+			position: absolute;
+			margin-top: -0.3%;
+			margin-right: -5%;
+			width: 30%;
+			
 		}
 	
 </style>
-<body>
+<body background="fundo.png">
 <div class="container-fluid" id="pr">
 	<?php include_once('listar.php');?>
 	<div class="alert alert-success" role="alert">
@@ -118,18 +138,18 @@ input{
 			  </button>
 	</div>
 	<div id="a">
-		<h1>Locação de equipamentos Informática</h1>
-		<img src="not.png" id="logo"><br>
-		
-	</div>
-	<div id="men">
-			<a href="index.html" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Home</a>
-			<a href="cadastro.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Cadastro</a>
-			<a href="sobre.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Sobre</a>
+	<div id="dLog">
+		<img src="not.png" id="logo" class="img-fluid" alt="Responsive image">
+		</div>
+		<div id="men">
+				<a href="index.html" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Home</a>
+				<a href="cadastro.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Cadastro</a>
+				<a href="sobre.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Sobre</a>
+		</div>
 	</div>
 	<div id="b"><br>
-		<div id="tit">
-			<h1>Equipamentos Cadastrados</h1>
+		<div id="h1">
+			<p>Equipamentos Cadastrados</p>
 		</div>
 	<table border="1">
 		

@@ -3,7 +3,7 @@
 	$con = mysqli_connect("db4free.net", "diogobatista", "moreira-2019", "diogospring");
 
 	if ($con) {
-		echo "Conectado com Sucesso";
+		echo "";
 	}else{
 		echo "Erro na conexão";
 	}

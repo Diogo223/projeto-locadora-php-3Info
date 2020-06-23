@@ -9,43 +9,56 @@
 	<title>Sobre</title>
 </head>
 	<style type="text/css">
-      
-		#a{
+      #a{
             margin-top: 1%;
-			background-color: #13B1CE;
+			background-color:rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
 			height: 100px;
             
 		}
 		#logo{
-			width: 15% ;
-			margin-top: -5%;
-			margin-left: -85%;
+			width: 50% ;
+			height: 80%;
+			margin-top: 5%;
+			margin-left: -40%;
+			margin-right: -5%;
 		}
+		
        
 		#b{
-           
-			background-color: #13B1CE;
+            
+			background-color: rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
-			height: 440px;
+			margin-left: 1%;
+			margin-right: 1%;
+			height: 500px;
 			
 		}
 		#c{
-			background-color: #13B1CE;
+			background-color: rgba(60, 209, 235, 0.438);
 			text-decoration: none;
 			text-align: center;
 			height:170px;
+			margin-left: 1%;
+			margin-right: 1%;
 		}
-		h1{	
-			color: white;	
+		#h1{
+			position: absolute;
+			color: rgba(255, 255, 255, 0.918);
+			font-family: Maiandra GD;
+			font-size: 25px;
+			margin-top: 10%;
+		    margin-left: 16%;
+			margin-right: 16%;
 		}
 		a{
+			
 			text-decoration: none;
 			font-size: 25px;
 			margin-left: 5%;
-           color: black;
+           	color: black;
         }
 		a:hover{
 			text-decoration: none;
@@ -55,50 +68,48 @@
 			width: 100%;
 			height: 100%;
 		}
-        #inf{
-            font-size: 30px;
-			text-align: center;
-			
-        }
-        #text{
-            position:absolute;
-            margin-top: 5%;
-			margin-left: 15%;
-			margin-right: 15%;
-        }
 		#bt{
-			
 			text-decoration: none;
-			font-size: 25px;
+			font-size: 20px;
 			margin-left: 3%;
-           	color: rgb(33, 38, 39);
-		
+			background-color: rgba(60, 209, 235, 0.158);
 		}
 		#bt:hover{
-			background-color: rgb(59, 67, 68);
+			background-color: rgba(38, 134, 151, 0.877);
 			text-decoration: none;
-			font-size: 25px;
+			font-size: 20px;
 			margin-left: 3%;
-           	color: white;
+           color: white;
 		
 		}
-		#pr{
-			background-image: url("fundo.png");
-			width: 100%;
-			height: 100%;
-		}
+		
 		#men{
-			height: 55px;
-			background-color: aliceblue;
+			position: absolute;
+			margin-left: 40%;
+			margin-top: 3%;
+			width: 55%;
+			height: 7%;
+			
+			font-family: Maiandra GD;
 		}
 		body{
 			max-width: 100%;
 			max-height: 100%;
 		}
-		
+		#pr{
+			height: 100%;
+			width: 100%;
+		}
+		#dLog{
+			position: absolute;
+			margin-top: -0.3%;
+			margin-right: -5%;
+			width: 30%;
+			
+		}
 	
 	</style>
-<body>
+<body background="fundo.png">
 	<div class="container-fluid" id="pr">
 		<div class="alert alert-success" role="alert">
 			<strong>Olá!</strong> Nessa página damos um pequeno resumo do site.
@@ -107,29 +118,32 @@
 			  </button>
 			</div>	  
 	<div id="a">
-		
-		<h1>Locação de equipamentos Informática</h1>
-		<img src="not.png" id="logo"><br>
-		
-	</div>
-	<div id="men">
+		<div id="dLog">
+		<img src="not.png" id="logo">
+		</div>
+
+		<div id="men">
 			<a href="index.html" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="bt">Home</a>		
 			<a href="listar.php" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Produtos</a>
 			<a href="cadastro.html" class="btn btn-light btn-lg " role="button" aria-pressed="true" id="bt">Cadastro</a>
 	</div>
         </div>
+	</div>
+	
 	
 	<div id="b">	
-        <div id="text">
-	
-			<h1 id="inf">Site criado e desenvolvido para auxílio de comerciantes de produtos<br> do ramo de informática, oferecendo uma plataforma segura para<br> o anúncio e venda de seus produtos.</h1>
+		
+        <div id="h1">
+			<P>Site criado e desenvolvido para auxilio de comerciantes de produtos do ramo de informática, oferecendo uma plataforma segura para o anuncio e venda de seus produtos.</P><br>
+			<p>Criador: Diogo Batista Pereira</p>	
+			<p>Escola: E.E.E.P Padre João Bosco de Lima</p>	
 			
-	</div>
+		</div>
 
 	
 	</div>
 	<div id="c">
-		<img src="rof.png" id="rodape">
+		<img src="rof.png" id="rodape">	
     </div>
 </div>
 </body>
